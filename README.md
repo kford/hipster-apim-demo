@@ -79,6 +79,9 @@ kubectl apply -f demo/istio-sidecar-injector.yaml
 
 kubectl label namespace default istio-injection=enabled
 
+# verify istio-injection label is applied to default namespace
+kubectl get namespace -L istio-injection
+
 ```
 
 #### Install Hispter
