@@ -197,6 +197,10 @@ eg: from istio-mixer-adapter directory
 ./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD currencyservice.default.svc.cluster.local hipster-internal
 ./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD cartservice.default.svc.cluster.local hipster-internal
 
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD productcatalogservice.default.svc.cluster.local hipster-external
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD currencyservice.default.svc.cluster.local hipster-external
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD cartservice.default.svc.cluster.local hipster-external
+
 ```
 
 * Create an Apigee application with the above API Product either in the Management UI or an Apigee developer portal [example](https://docs.apigee.com/api-platform/istio-adapter/installation#4_create_a_developer_app)
