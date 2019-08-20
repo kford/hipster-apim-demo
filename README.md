@@ -215,6 +215,10 @@ eg: from istio-mixer-adapter directory
 ![alt text](images/hipster_app-landing.png)
 
 
+### Distributed Tracing with Jaeger
+kubectl port-forward -n istio-system $(kubectl get pod -n istio-system -l app=jaeger -o jsonpath='{.items[0].metadata.name}') 8080:16686
+
+
 ### KNOWN ISSUES
 
 ### 1, Transcoding Not working
