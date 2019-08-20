@@ -12,9 +12,9 @@
 Set your Google Cloud Project ID
 
 ```
-export PROJECT_ID=<gcp-project-id>
+export PROJECT_ID=sfl-atf-demo-1
 export ZONE=us-central1-a
-export CLUSTER_NAME=my-cluster
+export CLUSTER_NAME=istio-demo
 ```
 
 #### Download the repo
