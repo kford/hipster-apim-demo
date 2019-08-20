@@ -132,6 +132,10 @@ export APIGEE_ISTIO_DOWNLOAD_URL=https://github.com/apigee/istio-mixer-adapter/r
 
 mkdir -p $APIGEE_ISTIO_DIR && cd $APIGEE_ISTIO_DIR && curl -L $APIGEE_ISTIO_DOWNLOAD_URL | tar xvz
 
+export APIGEE_ORG=<OrgName>
+export APIGEE_ENV=<EnvName>
+export APIGEE_USER=<Username>
+export APIGEE_PASSWORD=<Password>
 ./apigee-istio provision --grpc -o [org] -e [env] -u [username] -p [password] > samples/apigee/grpc/handler.yaml
 
 kubectl apply -f samples/apigee/grpc/apigee-adapter.yaml
