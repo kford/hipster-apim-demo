@@ -148,11 +148,13 @@ cd ..
 #### Enable API Key based Authentication
 ```
 kubectl apply -f demo/rule.yaml
+# Details of how rules are enforced is defined in istio-mixer-adapter/samples/apigee/definitions.yaml
 
 #Get List of Products or other URLs to get ads, or currencies we used earlier
 curl $GATEWAY_URL/products
 
 #The above will fail with HTTP 403
+
 ```
 
 Follow instructions [here](https://docs.apigee.com/api-platform/istio-adapter/install-istio_1_1#get_an_api_key) to get a valid API Key and access the APIs
