@@ -12,7 +12,7 @@
 Set your Google Cloud Project ID
 
 ```
-export PROJECT_ID=sfl-atf-demo-1
+export PROJECT_ID=svl-atf-demo-1
 export ZONE=us-central1-a
 export CLUSTER_NAME=istio-demo
 ```
