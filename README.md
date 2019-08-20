@@ -190,6 +190,13 @@ productcatalogservice.default.svc.cluster.local
 recommendationservice.default.svc.cluster.local
 currencyservice.default.svc.cluster.local
 cartservice.default.svc.cluster.local
+
+eg:
+apigee-istio bindings -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USERNAME -p $APIGEE_PASSWORD add productcatalogservice.default.svc.cluster.local hipster-internal
+apigee-istio bindings -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USERNAME -p $APIGEE_PASSWORD add recommendationservice.default.svc.cluster.local hipster-internal
+apigee-istio bindings -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USERNAME -p $APIGEE_PASSWORD add currencyservice.default.svc.cluster.local hipster-internal
+apigee-istio bindings -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USERNAME -p $APIGEE_PASSWORD add cartservice.default.svc.cluster.local hipster-internal
+
 ```
 
 * Create an Apigee application with the above API Product either in the Management UI or an Apigee developer portal [example](https://docs.apigee.com/api-platform/istio-adapter/installation#4_create_a_developer_app)
