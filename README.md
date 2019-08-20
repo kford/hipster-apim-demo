@@ -136,7 +136,7 @@ export APIGEE_ORG=<OrgName>
 export APIGEE_ENV=<EnvName>
 export APIGEE_USER=<Username>
 export APIGEE_PASSWORD=<Password>
-./apigee-istio provision --grpc -o [org] -e [env] -u [username] -p [password] > samples/apigee/grpc/handler.yaml
+./apigee-istio provision --grpc -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD > samples/apigee/grpc/handler.yaml
 
 kubectl apply -f samples/apigee/grpc/apigee-adapter.yaml
 kubectl apply -f samples/apigee/grpc/definitions.yaml
