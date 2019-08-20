@@ -192,14 +192,15 @@ currencyservice.default.svc.cluster.local
 cartservice.default.svc.cluster.local
 
 eg: from istio-mixer-adapter directory
-./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD productcatalogservice.default.svc.cluster.local hipster-internal
-./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD recommendationservice.default.svc.cluster.local hipster-internal
-./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD currencyservice.default.svc.cluster.local hipster-internal
-./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD cartservice.default.svc.cluster.local hipster-internal
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD productcatalogservice.default.svc.cluster.local hip-internal
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD recommendationservice.default.svc.cluster.local hip-internal
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD currencyservice.default.svc.cluster.local hip-internal
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD cartservice.default.svc.cluster.local hip-internal
 
-./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD productcatalogservice.default.svc.cluster.local hipster-external
-./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD currencyservice.default.svc.cluster.local hipster-external
-./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD cartservice.default.svc.cluster.local hipster-external
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD productcatalogservice.default.svc.cluster.local hip-external
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD currencyservice.default.svc.cluster.local hip-external
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD recommendationservice.default.svc.cluster.local hip-external
+./apigee-istio bindings add -o $APIGEE_ORG -e $APIGEE_ENV -u $APIGEE_USER -p $APIGEE_PASSWORD cartservice.default.svc.cluster.local hip-external
 
 ```
 
